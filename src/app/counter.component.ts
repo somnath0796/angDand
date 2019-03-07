@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
     //outputs: ['countChanged'],
     template: `
         <div (click) = 'countEvent()'>
-            Please click here...
+           <p style='color:#00f;'> Please click here... </p>
         </div>
     `
 })

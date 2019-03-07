@@ -9,6 +9,8 @@ import { CounterComponent } from './counter.component';
 import { ConvertPipe } from './convert.pipe';
 import { FormatDirective } from './format.directive';
 import { BorderComponent } from './border.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PostsService } from './posts.service';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { BorderComponent } from './border.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
